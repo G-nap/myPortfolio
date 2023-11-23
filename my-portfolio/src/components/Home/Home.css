@@ -1,0 +1,22 @@
+.home-flex-box {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */   
+    background-color: aqua;
+    height: 64%;
+    width: 70%;
+    
+}
+.home-flex-item-text {
+    /* background-color: brown; */
+    /* height: 100%; */
+    width: 70%;
+    border: 1px solid rgba(114, 114, 114, 0.6)
+}
+
+.home-flex-item-img {
+    /* background-color: brown; */
+    /* height: 100%; */
+    width: 30%;
+    border: 1px solid rgba(114, 114, 114, 0.6)
+}
