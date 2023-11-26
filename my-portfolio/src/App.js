@@ -25,7 +25,7 @@ function App() {
           <li
             style={{ float: 'left' }}
             onClick={() => scrollToSection(home)}
-            className="link"
+            className="link-h1"
           >
             Chotie.Portfolio
           </li>
