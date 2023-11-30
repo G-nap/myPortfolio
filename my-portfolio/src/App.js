@@ -1,7 +1,8 @@
 import React, { useRef } from 'react'
-import ScrollToTop from './components/ScrollToTop'
+// import ScrollToTop from './components/ScrollToTop'
 import Home from './components/Home/Home'
-
+import About from './components/About/About'
+import Projects from './components/Projects/Projects'
 import './App.css'
 import './customize-scrollbar.css'
 
@@ -19,7 +20,7 @@ function App() {
   }
   return (
     <div className="">
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <div className="nav">
         <ul>
           <li
@@ -60,14 +61,14 @@ function App() {
           Home
         </li>
       </div>
-      <div ref={home} className="home">
+      <div ref={home} className="home slide-bottom">
         <Home />
       </div>
       <div ref={about} className="about">
-        <h3>About me</h3>
+        <About />
       </div>
       <div ref={projects} className="projects">
-        <h3>Projects</h3>
+        <Projects />
       </div>
       <div ref={contact} className="contact">
         <h3>Contact</h3>
