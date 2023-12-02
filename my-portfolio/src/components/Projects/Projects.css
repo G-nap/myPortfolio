@@ -118,6 +118,7 @@
   position: absolute;
   width: 70%;
   transform: translate(0%, -10%);
+  z-index: 0;
 }
 
 .useer-textbox {
@@ -261,7 +262,7 @@
   width: 40%;
   position: relative;
   background-size: cover;
-  transform: translate(0%, 0%);
+  /* transform: translate(0%, 0%); */
   display: block;
   margin-left: auto;
   z-index: 1;

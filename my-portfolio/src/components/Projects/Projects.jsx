@@ -16,7 +16,6 @@ function Projects() {
                     <div className='pj-img-layout'>
                         <img src={require('../../assets/images/p1.png')} alt='react-icon' className='pj-img' />
                     </div>
-                    {/* <div className='pj-link'>It is a long established fact that a reader</div> */}
                     <div className='pj-link-layout'>
                         <a className='pj-link' rel="noopener noreferrer" href={require('../../assets/documents/CE65-20/poster.pdf')} target="_blank">Poster</a>
                         <a className='pj-link' rel="noopener noreferrer" href={require('../../assets/documents/CE65-20/report.pdf')} target="_blank">Report</a>
@@ -42,13 +41,10 @@ function Projects() {
                             <a className='pj-link' rel="noopener noreferrer" href="https://www.figma.com/file/k50zEdEE5gnrrOIrbeurK9/U-seer?type=design&node-id=0%3A1&mode=design&t=Q2ERsTh3ovFM1CAB-1" target="_blank">Figma</a>
                             <a className='pj-link' rel="noopener noreferrer" href="https://www.figma.com/proto/k50zEdEE5gnrrOIrbeurK9/U-seer?page-id=0%3A1&node-id=89-324&starting-point-node-id=89%3A324&mode=design&t=y0eLCdsGKDo46WZ5-1" target="_blank">Demo</a>
                         </div>
-                    </div>
-                    {/* <div className='pj-link'><div className='pj-dest'> It is a long established fact that a reader</div> </div> */}
+                    </div>    
                 </div>
-                {/* <div> */}
                 <div className='pj-img-layout-2'>
                     <img src={require('../../assets/images/p2.png')} alt='react-icon' className='pj-img-2' />
-                    {/* </div> */}
                 </div>
             </div>
 
