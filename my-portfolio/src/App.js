@@ -4,6 +4,7 @@ import Home from './components/Home/Home'
 import About from './components/About/About'
 import Projects from './components/Projects/Projects'
 import Navbar from './components/Navbar'
+import Contact from './components/Contact'
 import './App.css'
 import './customize-scrollbar.css'
 import { navLinks } from './constants'
@@ -31,22 +32,24 @@ function App() {
 
   return (
     <div className="">
-      <nav className="w-full flex px-10 py-6 justify-between items-center navbar font-roboto-mono bg-white sticky top-0 z-50">
+      <nav className="w-full flex px-10 py-8 justify-between items-center navbar font-roboto-mono bg-white sticky top-0 z-50">
         {/* <img src={require('../assets/images/logo_sub.png')} alt="hoobank" className="w-[124px] h-[32px]" /> */}
-        <div className="text-[16px] text-slate-950">Chotie.Portfolio</div>
+        <div className="text-[16px] text-slate-950 font-semibold">
+          Chotie.Portfolio
+        </div>
 
         <ul className="list-none sm:flex hidden justify-end items-center flex-1">
           <li
             style={{ float: 'right' }}
             onClick={() => scrollToSection(home)}
-            className="link"
+            className="text-[16px] text-slate-950 font-semibold"
           >
             Home
           </li>
           <li
             style={{ float: 'right' }}
             onClick={() => scrollToSection(about)}
-            className="link"
+            className="text-[16px] text-slate-950 font-semibold ml-10"
           >
             About
           </li>
@@ -54,14 +57,14 @@ function App() {
           <li
             style={{ float: 'right' }}
             onClick={() => scrollToSection(projects)}
-            className="link"
+            className="text-[16px] text-slate-950 font-semibold ml-10"
           >
             Project
           </li>
           <li
             style={{ float: 'right' }}
             onClick={() => scrollToSection(contact)}
-            className="link"
+            className="text-[16px] text-slate-950 font-semibold ml-10"
           >
             Contact
           </li>
@@ -75,7 +78,7 @@ function App() {
                 : require('./assets/images/menu.png')
             }
             alt="menu"
-            className="w-[28px] h-[28px] object-contain"
+            className="w-[20px] h-[20px] object-contain"
             onClick={() => setToggle(!toggle)}
           />
 
@@ -86,26 +89,26 @@ function App() {
                   <ul className="list-none flex justify-end items-start flex-1 flex-col">
                     <li
                       onClick={() => scrollToSection(home)}
-                      className="text-2xl mb-6"
+                      className="text-xl mb-6"
                     >
                       Home
                     </li>
                     <li
                       onClick={() => scrollToSection(about)}
-                      className="text-2xl mb-6"
+                      className="text-xl mb-6"
                     >
                       About
                     </li>
 
                     <li
                       onClick={() => scrollToSection(projects)}
-                      className="text-2xl mb-6"
+                      className="text-xl mb-6"
                     >
                       Project
                     </li>
                     <li
                       onClick={() => scrollToSection(contact)}
-                      className="text-2xl mb-3"
+                      className="text-xl mb-3"
                     >
                       Contact
                     </li>
@@ -114,115 +117,19 @@ function App() {
               )}
             </ul>
           </div>
-
-          {/* <div
-            className={`
-            ${!toggle ? 'hidden' : 'flex'} 
-            p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
-          >
-            <ul className="list-none flex justify-end items-start flex-1 flex-col"> */}
-
-          {/* {navLinks.map((nav, index) => (
-                <li
-                  key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? 'text-white' : 'text-dimWhite'
-                  } ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'}`}
-                  onClick={() => setActive(nav.title)}
-                >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
-                </li>
-              ))} */}
-
-          {/* <li
-                style={{ float: 'right' }}
-                onClick={() => scrollToSection(home)}
-                className="link"
-              >
-                Home
-              </li>
-              <li
-                style={{ float: 'right' }}
-                onClick={() => scrollToSection(about)}
-                className="link"
-              >
-                About
-              </li>
-
-              <li
-                style={{ float: 'right' }}
-                onClick={() => scrollToSection(projects)}
-                className="link"
-              >
-                Project
-              </li>
-              <li
-                style={{ float: 'right' }}
-                onClick={() => scrollToSection(contact)}
-                className="link"
-              >
-                Contact
-              </li>
-            </ul>
-          </div> */}
         </div>
       </nav>
-      {/* <ScrollToTop /> */}
-      {/* <Navbar/> */}
-
-      {/* <div className="nav">
-        <ul>
-          <li
-            style={{ float: 'left' }}
-            onClick={() => scrollToSection(home)}
-            className="link-h1"
-          >
-            Chotie.Portfolio
-          </li>
-          <li
-            style={{ float: 'right' }}
-            onClick={() => scrollToSection(contact)}
-            className="link"
-          >
-            Contact
-          </li>
-
-          <li
-            style={{ float: 'right' }}
-            onClick={() => scrollToSection(projects)}
-            className="link"
-          >
-            Project
-          </li>
-          <li
-            style={{ float: 'right' }}
-            onClick={() => scrollToSection(about)}
-            className="link"
-          >
-            About
-          </li>
-
-          <li
-            style={{ float: 'right' }}
-            onClick={() => scrollToSection(home)}
-            className="link"
-          >
-            Home
-          </li>
-        </ul>
-      </div> */}
-      <div ref={home} className="home">
-        {/* {width < breakpoint ? null : <Home />} */}
+      <div ref={home} className="home mb-48 lg:mb-[160px] lg:mt-[84px]">
         <Home />
       </div>
-      <div ref={about} className="about">
+      <div ref={about} className="about mb-48 lg:mb-[160px] ">
         <About />
       </div>
-      <div ref={projects} className="projects">
+      <div ref={projects} className="projects mb-48 lg:mb-[160px]">
         <Projects />
       </div>
       <div ref={contact} className="contact">
-        <h3>Contact</h3>
+        <Contact />
       </div>
     </div>
   )

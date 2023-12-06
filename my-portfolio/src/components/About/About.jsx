@@ -3,10 +3,10 @@ import './About.css'
 
 function About() {
     return (
-        <div className='about-layout'>
-            <div className='about-tag'>About Me</div>
-            <div className='about-title'>A passionate Front-end Developer. </div>
-            <div className='about-dest'>
+        <div className='w-3/4 mt-10 md:w-3/4 lg:w-3/5 xl:w-3/5 2xl:w-3/5'>
+            <div className='font-roboto-mono text-xl text-[#9191ff] font-bold'>About Me</div>
+            <div className='font-roboto-mono font-bold text-2xl my-6'>A passionate Front-end Developer. </div>
+            <div className='font-roboto-mono text-xl md:col-span-2'>
             I recently graduated in Computer Engineering from KMITL with a strong passion for becoming an expert in front-end development 
             and creating beautiful, functional designs (UX/UI). My experience is primarily rooted in collaborative work, where I have been 
             entrusted with responsibilities related to UI design and front-end development, utilizing technologies such as React.js, HTML,
