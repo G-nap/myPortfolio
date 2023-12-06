@@ -1,7 +1,6 @@
 import React from 'react'
 import { VscMail } from 'react-icons/vsc'
 import { IoCallOutline } from 'react-icons/io5'
-import { CiLocationOn } from "react-icons/ci";
 import { SlLocationPin } from "react-icons/sl";
 
 function Contact() {

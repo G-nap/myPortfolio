@@ -3,14 +3,14 @@ import React, { useState, useRef } from 'react'
 import Home from './components/Home/Home'
 import About from './components/About/About'
 import Projects from './components/Projects/Projects'
-import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar'
 import Contact from './components/Contact'
 import './App.css'
 import './customize-scrollbar.css'
-import { navLinks } from './constants'
+// import { navLinks } from './constants'
 
 function App() {
-  const [active, setActive] = useState('Home')
+  // const [active, setActive] = useState('Home')
   const [toggle, setToggle] = useState(false)
 
   const home = useRef(null)
@@ -26,9 +26,9 @@ function App() {
   }
 
   // The current width of the viewport
-  const width = window.innerWidth
+  // const width = window.innerWidth
   // The width below which the mobile view should be rendered
-  const breakpoint = 620
+  // const breakpoint = 620
 
   return (
     <div className="">

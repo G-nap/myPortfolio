@@ -7,17 +7,17 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
 
-  const home = useRef(null)
-  const about = useRef(null)
-  const projects = useRef(null)
-  const contact = useRef(null)
+  // const home = useRef(null)
+  // const about = useRef(null)
+  // const projects = useRef(null)
+  // const contact = useRef(null)
 
-  const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop - 60,
-      behavior: 'smooth',
-    })
-  }
+  // const scrollToSection = (elementRef) => {
+  //   window.scrollTo({
+  //     top: elementRef.current.offsetTop - 60,
+  //     behavior: 'smooth',
+  //   })
+  // }
 
   return (
     <nav className="w-full flex px-10 py-6 justify-between items-center navbar font-roboto-mono">
